@@ -118,4 +118,13 @@ div img {
 		flex: 0 0 44%;
 		background-color: #ccf;
 	}
+
+	.reverse {
+		flex-direction: row-reverse;
+	}
+
+	.reverse [class*='col-1'] {
+		margin-left: 0;
+		margin-right: 4%;
+	}
 }
