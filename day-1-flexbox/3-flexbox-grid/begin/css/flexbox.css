@@ -14,9 +14,11 @@ html {
 body {
 	font-family: Arial, Geneva, sans-serif;
 }
+
 a {
 	color: #2772B0;
 }
+
 .wrapper {
 	width: 97%;
 	max-width: 1200px;
@@ -38,23 +40,32 @@ div img {
 
 [class*="col-"] {
 	margin-left: 4%;
+	flex: 0 0 92%;
+	margin-bottom: 4%;
 }
 
 .col-1-2,
 .col-1-4 {
 	background-color: #ffc;
 }
+
 .col-2 {
 	background-color: #ccf;
 }
+
 .col-3 {
 	background-color: #fcf;
 }
+
 .col-4 {
 	background-color: #cff;
 }
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
+/* 
+	if the screen width is less than 768px but
+	greater than or equal to 480px the following css applies.
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	.col-1-2,
 	.col-2 {
 		flex: 0 0 44%;
@@ -65,8 +76,21 @@ div img {
 	.col-4 {
 		flex: 0 0 92%;
 	}
+
+	.col-5-1 {
+		flex: 0 0 44%;
+		background-color: #ffc;
+	}
+
+	.col-5-2 {
+		flex: 0 0 92%;
+		order: -1;
+		background-color: #ffc;
+	}
 }
 /* Desktop screen Sizes */
+/* if the screen width is greater than or equal to 768px
+   the following css applies */
 @media only screen and (min-width: 768px) {
 	.col-1-2,
 	.col-1-4 {
@@ -83,5 +107,15 @@ div img {
 	
 	.col-4 {
 		flex: 0 0 92%;
+	}
+
+	.col-5-1 {
+		flex: 0 0 20%;
+		background-color: #ffc;
+	}
+
+	.col-5-2 {
+		flex: 0 0 44%;
+		background-color: #ccf;
 	}
 }
