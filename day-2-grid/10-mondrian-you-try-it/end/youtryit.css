@@ -4,7 +4,7 @@
 	height: 458px;
 	font-size: 3em;
 	font-family: Arial, helvetica, sans-serif;
-  	display: grid;
+  display: grid;
 	grid-template-rows: 70px 17px 60px 54px 86px 147px;
 	grid-template-columns: 304px 92px 153px 68px;
 	grid-gap: 5px; 
