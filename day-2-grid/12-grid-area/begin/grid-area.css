@@ -39,7 +39,7 @@ aside {
 @media screen and (min-width: 1000px) { 
 	.wrapper {
 		grid-template-areas:
-		"sidebar . article article"
-		"sidebar . header header";
+		"sidebar ... article article"
+		"sidebar ... header header";
 	}
 }
